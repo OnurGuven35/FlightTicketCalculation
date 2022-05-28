@@ -22,35 +22,25 @@ public class Flight {
         if (tip == 1 && km > 0 && age > 0) {
             if (age < 12) {
                 son = (ds1);
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else if (age <= 24) {
                 son = (tutar - ds2);
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else if (age <= 65) {
                 son = (tutar);
-                System.out.print("Toplam Tutar : " + son + "TL");
-            } else if (age >= 66) {
-                son = (tutar - ds3);
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else {
-                System.out.print("Hatali Giris Yaptiniz Lutfen Tekrar Deneyiniz !!! ");
+                son = (tutar - ds3);
             }
+            System.out.print("Toplam Tutar : " + son + "TL");
         } else if (tip == 2 && km > 0 && age > 0) {
             if (age < 12) {
                 son = 2 * ((ds1) - ((ds1) * 0.20));
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else if (age <= 24) {
                 son = 2 * ((tutar - ds2) - ((tutar - ds2) * 0.20));
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else if (age <= 65) {
                 son = 2 * (tutar - (tutar * 0.20));
-                System.out.print("Toplam Tutar : " + son + "TL");
-            } else if (age >= 66) {
-                son = 2 * ((tutar - ds3) - ((tutar - ds3) * 0.20));
-                System.out.print("Toplam Tutar : " + son + "TL");
             } else {
-                System.out.print("Hatali Giris Yaptiniz Lutfen Tekrar Deneyiniz !!! ");
+                son = 2 * ((tutar - ds3) - ((tutar - ds3) * 0.20));
             }
+            System.out.print("Toplam Tutar : " + son + "TL");
         } else {
             System.out.print("Hatali Giris Yaptiniz Lutfen Tekrar Deneyiniz !!! ");
         }
